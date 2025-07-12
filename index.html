@@ -15,24 +15,35 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>South Africa</h1>
-          <p>
-            Saturday 12:50, partly cloudy
-            <br />
-            Humidity 53%, Wind 4.15km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Johannesburg</h1>
+            <p class="weather-app-details">
+              Saturday 12:50, partly cloudy
+              <br />
+              Humidity <strong>53%</strong>, Wind <strong>4.15km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature">
+            <div class="temperature-icon">⛅</div>
+            <div class="temperature-value">19</div>
+            <div class="temperature-unit">°C</div>
+          </div>
         </div>
-        <div>⛅19°C</div>
       </main>
       <footer>
-        Coded by
+        This project was coded by
         <a href="https://github.com/Karabo-Khoza" target="_blank"
           >Karabo Khoza</a
         >, is open-sourced on
